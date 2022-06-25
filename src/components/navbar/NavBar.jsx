@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ReactStars from "react-rating-stars-component";
 import {
     Navbar,
@@ -24,9 +24,9 @@ function NavBar(props) {
 
     return (
         <div>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="black" expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="#">Movie App</Navbar.Brand>
+                    <Navbar.Brand href="#"><h5 style={{color:'white',fontFamily:'fantasy'}}>Movie App</h5></Navbar.Brand>
                     <ReactStars
                         count={10}
                         onChange={(newRating) => ratingChanged(newRating)}
@@ -49,12 +49,12 @@ function NavBar(props) {
                         <Form className="d-flex">
                             <FormControl
                                 type="search"
-                                placeholder="Search movie title"
+                                placeholder="Search by movie name"
                                 className="me-2"
                                 aria-label="Search"
                                 onChange={(event) => handleChange(event)}
                             />
-                            <Button variant="outline-success">Search</Button>
+                            <Button variant="info">Search</Button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>

@@ -26,7 +26,7 @@ function AddMovie(props) {
     };
     return (
         <div>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="info" onClick={handleShow}>
                 Add new movie
             </Button>
 
