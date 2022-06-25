@@ -20,9 +20,10 @@ function AddMovie(props) {
         props.setMovies([...props.movies, newMovie]);
         handleClose();
     };
+    
     const handleSaveChanges = () => {
-        // newMovie ? saveChanges() : alert("You cannot add an empty fileds");
-        saveChanges();
+        newMovie ? saveChanges() : alert("You cannot leave the movie name filed empty");
+        
     };
     return (
         <div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import "./MovieItem.css";
+import PropTypes from "prop-types"
 export default function MovieItem({
   title,
   cover,
@@ -29,14 +30,14 @@ export default function MovieItem({
     </div>
   );
 }
-// MovieItem.propTypes = {
-//     title: PropTypes.string.isRequired,
-//     cover: PropTypes.string.isRequired,
-//     category: PropTypes.string.isRequired,
-//     cast: PropTypes.string.isRequired,
-//     rate: PropTypes.number.isRequired,
-//     release: PropTypes.string.isRequired,
-// };
+MovieItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    cast: PropTypes.string.isRequired,
+    rate: PropTypes.number.isRequired,
+    release: PropTypes.string.isRequired,
+};
 MovieItem.defaultProps = {
   title: "Movie Title",
   cover:
